@@ -1,12 +1,12 @@
 import MenuList from "../MenuList";
-import Order from "../Order";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+
   return (
     <div className="App">
       <MenuList />
-      <Order />
     </div>
   );
 }
