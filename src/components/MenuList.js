@@ -33,16 +33,17 @@ function MenuList() {
         setOrder([...order, newItem]);
     }
 
-    const handleClick = (e) => {
-
+    const handleClick = (userId) => {
+        console.log(userId)
         const newOrderItem = {
             id: nanoid(),
-            name: items[0].name,
-            price: items[0].price,
+            name: userId.name,
+            price: userId.price,
         }
 
 
         addOrderItem(newOrderItem);
+        
     };
 
 

@@ -15,7 +15,7 @@ function MenuItem({items, handleClick}) {
         <li key={id}>
             <div>{name}</div>
             <div>{price}</div>
-            <button type='button' onClick={handleClick}>Add To Order</button>
+            <button type='button' onClick={() => handleClick(items[id - 1])}>Add To Order</button>
         </li>
     ));
 
