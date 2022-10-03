@@ -1,6 +1,6 @@
 
 
-function Order({order, id}) {
+function Order({order, id, totalPrice}) {
 
     const orderList = order.map(({id, name, price}) => (
         <li key={id}>
@@ -10,9 +10,12 @@ function Order({order, id}) {
     ));
 
   return (
+    <>
         <ul>
             {orderList}
         </ul>
+        <div>${totalPrice}.00</div>
+    </>
   )
 }
 

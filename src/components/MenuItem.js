@@ -14,7 +14,7 @@ function MenuItem({items, handleClick}) {
     const listItems = items.filter(FILTER_OPTIONS[filter]).map(({name, price, id}) => (
         <li key={id}>
             <div>{name}</div>
-            <div>{price}</div>
+            <div>${price}.00</div>
             <button type='button' onClick={() => handleClick(items[id - 1])}>Add To Order</button>
         </li>
     ));
