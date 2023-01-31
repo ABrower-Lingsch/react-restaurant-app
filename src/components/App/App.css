@@ -14,16 +14,19 @@ body {
     background-image: url("../../components/brick.jpg");
     background-size: 100vw;
     background-position-y: 55px;
+    
+    
 }
 
 .restaurantLogo {
     background-image: url("../../components/pizza.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat:no-repeat;
     width: 100vw;
     color: #fff;
     height: 20rem;
     position: relative;
+    
 }
 
 
