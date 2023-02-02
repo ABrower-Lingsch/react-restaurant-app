@@ -25,6 +25,8 @@ function MenuList() {
   const [menuItems, setMenuItems] = useState(MENU_ITEMS);
   const [filter, setFilter] = useState("pizza");
   const [order, setOrder] = useState([]);
+  const [name, setName] = useState("");
+  const [telephone, setTelephone] = useState("");
 
   const submitOrder = ({ name, telephone }) => {
     const newOrder = {
@@ -39,7 +41,6 @@ function MenuList() {
     submittedOrders.push(newOrder);
     localStorage.setItem("submittedOrders", JSON.stringify(submittedOrders));
     setOrder([]);
-
   };
 
   const addToOrder = ({ name, price }) => {
@@ -72,13 +73,25 @@ function MenuList() {
     <div className="mainMenu">
       <section className="fullMenu">
         <div className="categories">
-          <button className="foodTypes" type="button" onClick={() => setFilter("pizza")}>
+          <button
+            className="foodTypes"
+            type="button"
+            onClick={() => setFilter("pizza")}
+          >
             Pizzas
           </button>
-          <button className="foodTypes" type="button" onClick={() => setFilter("calzone")}>
+          <button
+            className="foodTypes"
+            type="button"
+            onClick={() => setFilter("calzone")}
+          >
             Calzones
           </button>
-          <button className="foodTypes" type="button" onClick={() => setFilter("side")}>
+          <button
+            className="foodTypes"
+            type="button"
+            onClick={() => setFilter("side")}
+          >
             Sides
           </button>
         </div>
@@ -89,6 +102,10 @@ function MenuList() {
           order={order}
           removeFromOrder={removeFromOrder}
           submitOrder={submitOrder}
+          name={name}
+          setName={setName}
+          telephone={telephone}
+          setTelephone={setTelephone}
         />
       </section>
     </div>

@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-function Order({ order, removeFromOrder, submitOrder }) {
-  const [name, setName] = useState("");
-  const [telephone, setTelephone] = useState("");
+function Order({ order, removeFromOrder, submitOrder, name, setName, telephone, setTelephone }) {
 
   const orderList = order.map(({ name, price, qty }) => (
     <li key={name}>
