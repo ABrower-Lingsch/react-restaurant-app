@@ -10,7 +10,7 @@ function Order({ order, removeFromOrder, submitOrder }) {
       <div>{qty}</div>
       <div>${(price * qty).toFixed(2)}</div>
       <button className="removeFromOrder" type="button" onClick={() => removeFromOrder(name)}>
-        Remove from order
+        Remove
       </button>
     </li>
   ));

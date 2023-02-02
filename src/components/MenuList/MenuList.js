@@ -39,6 +39,7 @@ function MenuList() {
     submittedOrders.push(newOrder);
     localStorage.setItem("submittedOrders", JSON.stringify(submittedOrders));
     setOrder([]);
+
   };
 
   const addToOrder = ({ name, price }) => {
