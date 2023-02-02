@@ -166,4 +166,13 @@ input {
     .fullMenu {
         font-size: large;
     }
+
+    .yourOrderArea {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .yourOrderArea > input {
+        width: 100%;
+    }
 }
