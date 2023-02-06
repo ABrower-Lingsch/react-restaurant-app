@@ -1,7 +1,7 @@
 import MenuItem from "./MenuItem";
 import Order from "../Order/Order";
 import { useEffect, useState } from "react";
-import { nanoid } from "nanoid";
+
 
 const MENU_ITEMS = [
   { name: "Cheese Pizza", price: 10, type: "pizza", id: 1 },
